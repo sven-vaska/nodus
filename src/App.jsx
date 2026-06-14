@@ -43,7 +43,7 @@ export default function App() {
   }
 
   return (
-    <div className="flex min-h-screen bg-bg">
+    <div className="flex min-h-screen w-full bg-bg">
       <Sidebar open={sidebarOpen} onToggle={() => setSidebarOpen(!sidebarOpen)} />
       <main className="flex-1 overflow-auto">
         <Routes>
