@@ -12,7 +12,7 @@ export function daysAgo(date) {
 
 export function pipelineText(company) {
   const { status, starting_date, closed_date, loss_reason, status_changed_at } = company
-  const activeStatuses = ['In Conversation', 'Negotiation', 'On Hold', 'Trial', 'Waiting onboarding', 'Onboarding']
+  const activeStatuses = ['In Conversation', 'On Hold', 'Trial', 'Waiting onboarding', 'Onboarding']
 
   if (activeStatuses.includes(status)) {
     const ref = status_changed_at || starting_date

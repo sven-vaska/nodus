@@ -10,7 +10,7 @@ import { Phone, Mail, Calendar, MessageSquare, MoreHorizontal, Headphones, Layou
 import Loading from '../components/Loading'
 
 // 'Email' is intentionally not selectable — emails live in the Emails section now
-const typeOptions = ['Call', 'Follow-up', 'Meeting', 'Demo', 'Pakkumine', 'Note', 'Support', 'Other']
+const typeOptions = ['Call', 'Follow-up', 'Meeting', 'Demo', 'Offer', 'Note', 'Support', 'Other']
 const typeFilters = ['All', ...typeOptions]
 const typeColors = {
   'Call': { bg: '#F2EDE5', text: '#4C6FBF' },
@@ -18,12 +18,12 @@ const typeColors = {
   'Follow-up': { bg: '#F2EDE5', text: '#2E8A8A' },
   'Meeting': { bg: '#F2EDE5', text: '#3D8A5B' },
   'Demo': { bg: '#F2EDE5', text: '#A97B1F' },
-  'Pakkumine': { bg: '#F2EDE5', text: '#B4552D' },
+  'Offer': { bg: '#F2EDE5', text: '#B4552D' },
   'Note': { bg: '#F2EDE5', text: '#9C948A' },
   'Support': { bg: '#F2EDE5', text: '#B04343' },
   'Other': { bg: '#F2EDE5', text: '#7C756A' },
 }
-const icons = { 'Call': Phone, 'Email': Mail, 'Follow-up': Repeat2, 'Meeting': Calendar, 'Demo': LayoutGrid, 'Pakkumine': Receipt, 'Note': MessageSquare, 'Support': Headphones, 'Other': MoreHorizontal }
+const icons = { 'Call': Phone, 'Email': Mail, 'Follow-up': Repeat2, 'Meeting': Calendar, 'Demo': LayoutGrid, 'Offer': Receipt, 'Note': MessageSquare, 'Support': Headphones, 'Other': MoreHorizontal }
 
 export default function Activities() {
   const [activities, setActivities] = useState([])

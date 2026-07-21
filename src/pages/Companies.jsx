@@ -12,7 +12,7 @@ import DatePicker from '../components/DatePicker'
 import { Plus, List as ListIcon, LayoutGrid, MoreVertical } from 'lucide-react'
 import { useRef } from 'react'
 
-const statuses = ['All', 'Research', 'In Conversation', 'Negotiation', 'On Hold', 'Trial', 'Waiting onboarding', 'Onboarding', 'Won', 'Lost', 'Former Client']
+const statuses = ['All', 'Research', 'In Conversation', 'On Hold', 'Trial', 'Waiting onboarding', 'Onboarding', 'Won', 'Lost', 'Former Client']
 const counties = ['Tallinn', 'Tartu', 'Pärnu', 'Narva', 'Viljandi', 'Rakvere', 'Haapsalu', 'Kuressaare', 'Jõhvi', 'Soome']
 
 const sourceOptions = ['Self', 'Web', 'FB lead', 'Networking', 'Internet', 'Erply', 'Wishlist']
