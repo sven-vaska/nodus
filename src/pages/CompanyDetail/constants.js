@@ -18,7 +18,7 @@ export const activityIcons = { 'Call': Phone, 'Email': Mail, 'Follow-up': Repeat
 export const sourceOptions = ['Self', 'Web', 'FB lead', 'Networking', 'Internet', 'Erply', 'Wishlist']
 export const countyOptions = ['Tallinn', 'Tartu', 'Pärnu', 'Narva', 'Viljandi', 'Rakvere', 'Haapsalu', 'Kuressaare', 'Jõhvi', 'Soome']
 export const defaultSectors = ['Ehitus', 'Elekter', 'Energeetika', 'Haridus', 'Hooldus', 'Hotellindus', 'IT', 'Kaevandus', 'Kaubandus', 'Keemia', 'Kinnisvara', 'Kommunaal', 'Laondus', 'Logistika', 'Meditsiin', 'Metallitööstus', 'Meelelahutus', 'Metsandus', 'Puidutööstus', 'Põllumajandus', 'Reklaam', 'Restoran', 'Sport', 'Teenindus', 'Toiduainetööstus', 'Toitlustus', 'Transport', 'Turism', 'Tööstus']
-export const deviceOptions = ['Desktop', 'Mobile', 'Tablet', 'SmartTrack']
+export const deviceOptions = ['Mobile', 'Terminal', 'Self-service', 'SmartTrack']
 
 export const tabConfig = [
   { key: 'Overview', icon: LayoutGrid },
