@@ -23,3 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 .env
+.vercel
+
+# Superseded by public/favicon.png; kept locally only, not worth the 825kB in git history
+nodus_favicon.png

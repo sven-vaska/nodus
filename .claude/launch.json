@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "nodus",
+      "runtimeExecutable": "/Users/svenvaska/.fnm/node-versions/v24.16.0/installation/bin/node",
+      "runtimeArgs": ["node_modules/vite/bin/vite.js", "--port", "5178"],
+      "port": 5178
+    }
+  ]
+}

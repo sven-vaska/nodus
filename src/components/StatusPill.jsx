@@ -1,20 +1,26 @@
-const statusStyles = {
-  'Research': 'bg-[#f0f0ee] text-[#6b6b6b]',
-  'In Conversation': 'bg-[#eff6ff] text-[#1d4ed8]',
-  'On Hold': 'bg-[#fffbeb] text-[#b45309]',
-  'Waiting onboarding': 'bg-[#f0f4ff] text-[#475569]',
-  'Onboarding': 'bg-[#fef3c7] text-[#92400e]',
-  'Trial': 'bg-[#fdf2f8] text-[#be185d]',
-  'Won': 'bg-[#f0fdf4] text-[#15803d]',
-  'Lost': 'bg-[#fff1f2] text-[#be123c]',
-  'Former Client': 'bg-[#f5f3ff] text-[#7c3aed]',
+import { useWorkspace } from '../lib/WorkspaceContext'
+
+// Editorial style: colored dot + plain text instead of a filled pill
+const statusDots = {
+  'Research': '#9C948A',
+  'In Conversation': '#4C6FBF',
+  'On Hold': '#A97B1F',
+  'Waiting onboarding': '#3F6577',
+  'Onboarding': '#8A6A2A',
+  'Trial': '#C05C81',
+  'Won': '#3D8A5B',
+  'Lost': '#B04343',
+  'Former Client': '#6E4A8E',
 }
 
 export default function StatusPill({ status }) {
-  const style = statusStyles[status] || 'bg-[#f0f0ee] text-[#6b6b6b]'
+  const ctx = useWorkspace()
+  const dot = statusDots[status] || '#9C948A'
+  const label = ctx?.statusLabel ? ctx.statusLabel(status) : status
   return (
-    <span className={`inline-block px-1.5 py-0.5 rounded text-[10px] font-medium whitespace-nowrap ${style}`}>
-      {status}
+    <span className="inline-flex items-center gap-1.5 text-[12.5px] text-text-muted whitespace-nowrap">
+      <span className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: dot }} />
+      {label}
     </span>
   )
 }
